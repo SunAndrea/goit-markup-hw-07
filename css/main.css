@@ -734,7 +734,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  fill: #FFFFFF;
+  fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: color, background-color;
   transition-duration: 250ms;
@@ -773,8 +773,12 @@ body {
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: none;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__input::placeholder {
   font-weight: 400;
@@ -784,6 +788,9 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer__input:hover, .footer__input:focus {
+  border-color: rgb(33, 150, 243);
 }
 
 .footer__subscribe__button {
