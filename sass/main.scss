@@ -1,0 +1,40 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
+}
+
+.link {
+  text-decoration: none;
+}
+@import './base/reset';
+@import './utils/vars.scss';
+
+@import './components/header';
+@import './components/hero';
+@import './components/modal';
+@import './components/benefits';
+@import './components/works';
+@import './components/team';
+@import './components/customers';
+@import './components/footer';
+@import './components/cases';

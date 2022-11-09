@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  background-color: var(--white-bg-color);
+}

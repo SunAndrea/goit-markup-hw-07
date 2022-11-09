@@ -1,0 +1,118 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__wrapper {
+     display: flex;
+  justify-content: center;
+  }
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-blue-color);
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  justify-content: center;
+  text-decoration: none;
+  &__part {
+      font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-dark-color);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  &__list {
+      display: flex;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+  }
+  &__list__item:not(:first-child) {
+      margin-left: 50px;
+  }
+}
+
+
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  position: relative;
+  padding: 32px 0;
+
+  color: var(--title-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+      color: var(--hover-blue-color);
+  background-color: #ffffff;
+  }
+  &__current {
+      position: relative;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--blue-text-color);
+  &::after {
+ position: absolute;
+  content: '';
+  height: 4px;
+  bottom: -2px;
+  left: 0;
+  background: #2196f3;
+  border-radius: 2px;
+  width: 100%;
+  }
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+  &__item {
+      margin-left: 30px;
+  }
+  &__icon {
+    fill: currentColor;
+  margin-right: 10px;  
+  }
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+     color: var(--hover-blue-color);
+  }
+}
